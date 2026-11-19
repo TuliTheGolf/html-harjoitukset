@@ -1,0 +1,166 @@
+
+/* Vaihe 1: Nollaus ja taustaväri */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e8f5e9;
+}
+
+/* Vaihe 2: Fontit ja tekstit */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Vaihe 3: Yläosa */
+#header {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Vaihe 4: Sisältö ja osiot */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.osio {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Vaihe 5: Kuvagalleria */
+.kuva-ryhma {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.kuva-ryhma img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Vaihe 6: Listat */
+.tiedot-lista,
+.ohje-lista {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Vaihe 7: Taulukko */
+.aika-taulukko {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.aika-taulukko th,
+.aika-taulukko td {
+    border: 1px solid #999;
+    padding: 12px;
+    text-align: left;
+}
+
+.aika-taulukko th {
+    background-color: #2e7d32;
+    color: white;
+}
+
+.aika-taulukko tr:nth-child(even) {
+    background-color: #e8f5e9;
+}
+
+/* Vaihe 8: Lomake */
+.lomake-kentta {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border: 1px solid #999;
+    border-radius: 6px;
+}
+
+.nappi {
+    background-color: #2e7d32;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.nappi:hover {
+    background-color: #1b5e20;
+}
+
+/* Vaihe 9: Linkit */
+.linkki {
+    color: #2e7d32;
+    text-decoration: none;
+}
+
+.linkki:hover {
+    text-decoration: underline;
+    color: #1b5e20;
+}
+
+/* Vaihe 10: Alaosa */
+#footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Vaihe 11: Puhelinnäkymä */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .osio {
+        padding: 15px;
+    }
+
+    .kuva-ryhma img {
+        width: 100%;
+    }
+
+    .aika-taulukko {
+        font-size: 14px;
+    }
+}
